@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма для реєстрації</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- name -->
+        <div>
+            <label for="name">Введіть Ваше ім'я *</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <!-- surname -->
+        <div>
+            <label for="surname">Введіть Ваше прізвище *</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <!-- birthday -->
+        <div>
+            <label for="birthday">Введіть Вашу дату народження *</label>
+            <input type="text" name="birthday" id="birthday">
+        </div>
+        <!-- gender RADIO -->
+        <div>
+            <p>Оберіть Вашу стать:</p>
+            <input type="radio" name="gender" id="maleGender" checked />
+            <label for="maleGender">Чоловіча</label>
+
+            <input type="radio" name="gender" id="femaleGender" />
+            <label for="femaleGender">Жіноча</label>
+        </div>
+        <!-- town SELECTION -->
+        <div>
+            <label for="town">Оберіть місто:</label>
+            <select name="towкn" id="town">
+                <option value="kyiv">Київ</option>
+                <option value="Kharkiv">Харків</option>
+                <option value="Dnipro">Дніпро</option>
+            </select>
+        </div>
+        <!-- address TEXTAREA -->
+        <div>
+            <label for="address">Вкажіть адресу проживання: *</label>
+            <textarea name="address" id="address"></textarea>
+        </div>
+        <!-- language checkbox -->
+        <div>
+            <p>Вкажіть мови якими володієте</p>
+            <input type="checkbox" name="ukrainian" id="ukrainian" checked />
+            <label for="ukrainian">Українська</label>
+            <input type="checkbox" name="english" id="english" />
+            <label for="english">Англійська</label>
+        </div>
+        <!-- button -->
+        <div>
+            <button type="button" id="btn">Save</button>
+            <!-- <input type="submit" value="Save" id="btn"> -->
+        </div>
+    </form>
+
+    <p id="aboutUser"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
